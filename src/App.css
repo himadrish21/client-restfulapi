@@ -1,38 +1,51 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  text-align: center; 
+  height: 100vh;
+  width: 100%; 
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: center;  
+}
+.Employee-List{
+  font-size:25px;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 500px;
+  background-color: #FCBF49;
+  border-collapse: collapse;
+}
+a {
+  all: unset;
+}
+
+.Employee-List thead{
+  background-color:black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Employee-List th,td{
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Employee-details{
+    background-color: #FEFAE0;
+    height: 500px;
+    width: 800px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.Employee-details .details{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+
+.details h1{
+  margin: 20px;
 }
