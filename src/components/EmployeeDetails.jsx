@@ -1,11 +1,13 @@
 import React from 'react'
 import {useParams} from 'react-router-dom'
 import useFetch from "./useFetch";
+import { useNavigate } from 'react-router-dom';
 
 
 function EmployeeDetails() {
     let { id } = useParams();
 
+    let navigate = useNavigate();
     let { data, pending, error } = useFetch(`/users/${id}`);
 
 
@@ -23,6 +25,7 @@ function EmployeeDetails() {
         <h1>Salary:{  data?.user.salary}</h1>
         <h1>Location:{  data?.user.location}</h1>
       </div>
+      <button className='back-button' onClick={()=>{navigate(-1)}} style={{padding:"9px 35px",fontSize:"19px",backgroundColor:"#BDE0FE",border:"none",borderRadius:"10px"}}>Back</button>
     </div>
   )
 }

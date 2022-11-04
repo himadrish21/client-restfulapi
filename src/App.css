@@ -28,7 +28,7 @@ a {
 }
 
 .Employee-List th,td{
-  padding: 20px;
+  padding: 10px;
 }
 
 
@@ -48,4 +48,80 @@ a {
 
 .details h1{
   margin: 20px;
+}
+.back-button{
+  transition: 0.2s;
+}
+
+.back-button:hover{
+  transform: scale(1.1);
+}
+
+.employee-form-submit{
+  margin-top: 50px;
+  position: relative;
+
+}
+.employee-form-submit h1{
+  background-color:  #a2d2ff;
+  padding-top: 30px;
+}
+
+.employee-form{
+  background-color: #a2d2ff;
+  width: 700px;
+  height: auto;
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 150px 350px 200px;
+}
+.employee-form label{
+  font-size: 25px;
+  padding: 20px;
+}
+
+.employee-form input{
+  padding: 20px 9px ;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 350px;
+  font-size: 100%;
+}
+
+
+.form-error-message{
+  color: #ef2336;
+  margin: 10px;
+  padding: 10px 3px;
+}
+
+.form-button{
+  background-color:  #ef2336;
+  color: wheat;
+  border: none;
+  padding: 14px 4px;
+  font-size: 19px;
+  margin: 10px auto;
+  border-radius: 20px;
+  width: 200px;
+}
+.form-button-1{
+  background-color:  #ef2336;
+  color: wheat;
+  border: none;
+  padding: 14px 4px;
+  font-size: 19px;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.Add-employee{
+  background-color:  #ef2336;
+  color: wheat;
+  border: none;
+  padding: 20px 30px;
+  font-size: 19px;
+  margin: 10px;
+  border-radius: 20px;
 }

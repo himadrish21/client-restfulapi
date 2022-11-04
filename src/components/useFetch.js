@@ -22,7 +22,7 @@ const useFetch = (url) => {
       }
     }
       fetchData();  
-      // },1000)Employee-details'
+      // },1000)
   }, []);
       // fetch(url)
       //   .then((response) => {

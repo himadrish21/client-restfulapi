@@ -1,8 +1,9 @@
 import useFetch from "./useFetch";
-import { Link } from "react-router-dom";
+import { Link ,useNavigate} from "react-router-dom";
 
 function EmployeeList() {
   let { data, pending, error } = useFetch(`/users`);
+  let navigate =useNavigate()
   return (
     <div>
       <h1>Employee Table</h1>
@@ -35,6 +36,7 @@ function EmployeeList() {
           })}
       </tbody>
     </table>
+    <button className="Add-employee" onClick={()=>{navigate('/employeeSubmit')}}>Add Employee</button>
     </div>
   );
 }
